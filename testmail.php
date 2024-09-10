@@ -12,15 +12,15 @@ function sendAuthMailSkillDevelop($jsData){
 
             $mail->SMTPDebug = 2;
             $mail->isSMTP();
-            $mail->Host = 'apps.odishaone.gov.in';
+            $mail->Host = 'apps.abc.gg.in';
             $mail->Port = 25;
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = 'tls';
-            $mail->Username = 'skillodisha@odishaone.gov.in';
-            $mail->Password = 'zHGy2)32H<&?';
+            $mail->Username = '';
+            $mail->Password = '';
 
 
-            $mail->From = 'skillodisha@odishaone.gov.in';
+            $mail->From = '';
             $mail->FromName = 'Skill Development Program';
             $mail->addAddress($data->to, $data->name);            
             $mail->isHTML(true);
@@ -66,7 +66,7 @@ $strUserMessage .= "<div><br><br>Regards <br>Skill Development Team <br>OSDA</di
 
 $userdata['from'] = $strUserFrom;
 $userdata['to'] = 'karthickmanoharan271186@gmail.com';
-$userdata['name'] = 'Odisha Skill Development Authority';
+$userdata['name'] = 'test';
 $userdata['sub'] = $strsubject;
 $userdata['message'] = $strUserMessage;
 $jsUserData = json_encode($userdata);
