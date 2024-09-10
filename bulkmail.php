@@ -12,15 +12,15 @@ function sendAuthMailSkillDevelop($jsData){
 
     $mail->SMTPDebug = 2;
     $mail->isSMTP();
-    $mail->Host = 'apps.odishaone.gov.in';
+    $mail->Host = 'apps.abc.gov.in';
     $mail->Port = 25;
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Username = 'skillodisha@odishaone.gov.in';
-    $mail->Password = 'zHGy2)32H<&?';
+    $mail->Username = '';
+    $mail->Password = '';
 
 
-    $mail->From = 'skillodisha@odishaone.gov.in';
+    $mail->From = '';
     $mail->FromName = 'Skill Development Program';
     $mail->addAddress($data->to, $data->name);            
     $mail->isHTML(true);
@@ -40,7 +40,7 @@ function sendAuthMailSkillDevelop($jsData){
     //return $jsRes;
 }
 
-$strUserFrom = 'skillodisha@odishaone.gov.in';
+$strUserFrom = '';
 $strsubject = "Invitation to Join OSDA-FITT IITD Orientation Program Test Run";
 
 $strUserMessage = "Dear <strong>Participant</strong>,</br></br>";
@@ -85,7 +85,7 @@ $strUserMessage .= "<div>Thanks and regards,</br></div>";
 $strUserMessage .= "<div><strong>Skill Development Team</strong></br></div>";
 $strUserMessage .= "<div><strong>OSDA</strong></br></div>";
 
-//$emailArray = array('sureshkumar02@gmail.com','sureshkumar0505@gmail.com');
+//$emailArray = array('','');
 //print_r($emailArray);exit;
 
 include_once("mailList.php");
