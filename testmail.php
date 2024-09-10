@@ -21,7 +21,7 @@ function sendAuthMailSkillDevelop($jsData){
 
 
             $mail->From = '';
-            $mail->FromName = 'Skill Development Program';
+            $mail->FromName = 'Test';
             $mail->addAddress($data->to, $data->name);            
             $mail->isHTML(true);
 
@@ -40,21 +40,21 @@ function sendAuthMailSkillDevelop($jsData){
             return $jsRes;
         }
 
-$strUserFrom = 'skillodisha@odishaone.gov.in';
+$strUserFrom = 'test@gmail.com';
 
 $strsubject = "Registration for Test";
 
 $strUserMessage = "Dear <strong>Karthick</strong></br>";
 $strUserMessage .= "<div> <br>";
 $strUserMessage .= "</div>";
-$strUserMessage .= "Thank you for your interest shown in Digital Skilling Program of OSDA.</br></br>";
+$strUserMessage .= "Thank you for your interest shown in Testing</br></br>";
 
 $strUserMessage .= "Your application for the program is successfully submitted with registration id</br></br>";
 
 
-$strUserMessage .= "Once we review your application, we will enrol your application for the said course subject to meeting the guidelines of program. </br></br>";
+$strUserMessage .= "Once we review your application,</br></br>";
 
-$strUserMessage .= "For any clarifications you can reach out to <strong> <a href='mailto:skilldev.osda@gmail.com '>skilldev.osda@gmail.com </a></strong> with your registration number. </br>";
+$strUserMessage .= "For any clarifications you can reach out to. </br>";
 $strUserMessage .= "<div> <br>";
 $strUserMessage .= "</div>";
 
@@ -62,10 +62,10 @@ $strUserMessage .= "All the Best! </br>";
 
 //$strUserMessage .= "<div> <br>";
 //$strUserMessage .= "</div>";
-$strUserMessage .= "<div><br><br>Regards <br>Skill Development Team <br>OSDA</div>";
+$strUserMessage .= "<div><br><br>Regards <br>Test <br>OTAT</div>";
 
 $userdata['from'] = $strUserFrom;
-$userdata['to'] = 'karthickmanoharan271186@gmail.com';
+$userdata['to'] = 'test@gmail.com';
 $userdata['name'] = 'test';
 $userdata['sub'] = $strsubject;
 $userdata['message'] = $strUserMessage;
