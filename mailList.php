@@ -1,5 +1,5 @@
 <?php
 $emailArray = array(
-'heyyswayam@gmail.com',
-'jharanabehera068@gmail.com'
+'abc@gmail.com',
+'def@gmail.com'
 );
